@@ -5,10 +5,10 @@ own `localStorage`.
 
 
 ## Files in this bundle
-- `index.html` — the app
-- `manifest.json` — home-screen name/icon/color metadata
-- `sw.js` — offline caching
-- `icon-192.png`, `icon-512.png`, `icon-512-maskable.png`: app icons
+- `index.html`: The app
+- `manifest.json`: Home-screen name/icon/color metadata
+- `sw.js`: Offline caching
+- `icon-192.png`, `icon-512.png`, `icon-512-maskable.png`: App icons
 
 ## Note on data
 Entries are stored per-device in that browser's `localStorage` as there
