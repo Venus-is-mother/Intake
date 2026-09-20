@@ -1,0 +1,16 @@
+{
+  "name": "Intake: Water Tracker",
+  "short_name": "Intake",
+  "description": "A small, friendly daily water intake log, 1–6 litres.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F9F9FF",
+  "theme_color": "#F9F9FF",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
