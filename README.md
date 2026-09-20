@@ -1,4 +1,4 @@
-# Intake — Ready to Deploy
+# Intake
 
 This is the finished app that saves to the browser's
 own `localStorage`.
