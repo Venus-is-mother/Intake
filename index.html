@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Intake: Water Tracker</title>
+<title>Intake — Water Tracker</title>
 <meta name="description" content="A small, friendly daily water intake log, 1–6 litres.">
 <meta name="color-scheme" content="light">
 <link rel="manifest" href="manifest.json">
@@ -293,6 +293,12 @@
   .history .bar-col.today .day-lbl{ color:var(--coral); }
 
   .status{ text-align:center; font-size:11px; color:var(--ink-soft); margin-top:26px; font-weight:600; min-height:14px; }
+  .credit{
+    display:block; text-align:center; margin-top:14px;
+    font-size:12px; font-weight:600; color:var(--grape);
+    text-decoration:none;
+  }
+  .credit:active{ opacity:0.7; }
 
   /* ---- confetti ---- */
   .confetti-layer{
@@ -382,6 +388,7 @@
   <div class="history" id="history"></div>
 
   <div class="status" id="statusLine">Loading…</div>
+  <a class="credit" href="contact.html">Made by DevRenike</a>
 </div>
 
 <script>
@@ -565,7 +572,7 @@
 
     if(totalL > SCALE_MAX_L){
       els.overReadout.hidden = false;
-      els.overReadout.textContent = 'Over the ' + SCALE_MAX_L + ' L scale, good job!';
+      els.overReadout.textContent = 'Over the ' + SCALE_MAX_L + ' L scale \u2014 nicely done!';
     } else {
       els.overReadout.hidden = true;
     }

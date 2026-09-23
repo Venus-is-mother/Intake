@@ -1,7 +1,8 @@
-const CACHE = 'intake-v2';
+const CACHE = 'intake-v3';
 const ASSETS = [
   './',
   './index.html',
+  './contact.html',
   './manifest.json',
   './icon-192.png',
   './icon-512.png',

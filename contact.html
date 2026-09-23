@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Say Hello — Intake</title>
+<meta name="description" content="I design and build apps and websites like Intake. Get in touch.">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    color-scheme: light;
+    --bg:#F9F9FF;
+    --card:#FFFFFF;
+    --ink:#241F42;
+    --ink-soft:#8A86B8;
+    --line:#ECEBFF;
+    --water-a:#4FE0FF;
+    --water-b:#3B7BFF;
+    --sun:#FFDE59;
+    --coral:#FF4FA3;
+    --grape:#8C6FFF;
+    --mint:#2FE0A6;
+    --pink:#FF7EB6;
+    --shadow:rgba(36,31,66,0.10);
+    --shadow-soft:rgba(36,31,66,0.06);
+    --font: 'Fredoka', -apple-system, 'Segoe UI', Roboto, system-ui, sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html,body{height:100%;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:var(--font);
+    -webkit-font-smoothing:antialiased;
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;}
+  }
+  .wrap{
+    max-width:440px;
+    margin:0 auto;
+    padding:28px 20px 44px;
+    text-align:center;
+  }
+
+  .back{
+    display:inline-flex; align-items:center; gap:6px;
+    color:var(--ink-soft); text-decoration:none; font-weight:600; font-size:13px;
+    margin-bottom:26px;
+  }
+  .back svg{ width:14px; height:14px; }
+
+  /* mini mascot, reused from the app */
+  .mascot{ width:88px; height:132px; margin:0 auto 18px; position:relative; }
+  .mascot .cap{ width:30px; height:11px; background:var(--sun); border-radius:6px 6px 3px 3px; margin:0 auto -1px; }
+  .mascot .neck{ width:36px; height:9px; background:var(--card); border:2px solid var(--line); border-bottom:none; border-radius:7px 7px 0 0; margin:0 auto -1px; }
+  .mascot .body{
+    position:relative; width:88px; height:118px;
+    background:var(--card); border:2px solid var(--line);
+    border-radius:26px 26px 34px 34px; overflow:hidden;
+  }
+  .mascot .fill{
+    position:absolute; left:0; right:0; bottom:0; height:56%;
+    background:linear-gradient(180deg, var(--water-a), var(--water-b));
+  }
+  .mascot .face{ position:absolute; left:50%; top:46%; transform:translate(-50%,-50%); width:46px; height:46px; }
+
+  h1{ font-size:27px; font-weight:700; line-height:1.25; margin:0 0 10px; color:var(--water-b); }
+  .pitch{ font-size:14.5px; color:var(--ink-soft); font-weight:500; line-height:1.5; margin:0 0 28px; }
+
+  .links{ display:flex; flex-direction:column; gap:10px; text-align:left; }
+  .link-card{
+    display:flex; align-items:center; gap:12px;
+    background:var(--card); border-radius:18px; padding:13px 16px;
+    box-shadow:0 4px 12px var(--shadow-soft);
+    text-decoration:none; color:var(--ink);
+  }
+  .link-card:active{ transform:scale(0.98); }
+  .link-card .icon{
+    width:42px; height:42px; border-radius:12px; flex:none;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .link-card .icon svg{ width:20px; height:20px; }
+  .link-card .txt{ min-width:0; }
+  .link-card .label{ font-size:11px; color:var(--ink-soft); font-weight:600; text-transform:uppercase; letter-spacing:0.04em; }
+  .link-card .handle{ font-size:15px; font-weight:600; margin-top:1px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+
+  .icon.email{ background:var(--water-b); }
+  .icon.x{ background:var(--ink); }
+  .icon.tiktok{ background:var(--coral); }
+  .icon.youtube{ background:#FF5A5A; }
+
+  .badge{
+    display:inline-flex; align-items:center; gap:6px;
+    margin-top:30px; padding:7px 14px; border-radius:999px;
+    background:#DCEEFF; color:var(--ink);
+    font-size:12px; font-weight:700;
+  }
+  .badge svg{ width:13px; height:13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <a class="back" href="index.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+    Back to Intake
+  </a>
+
+  <div class="mascot">
+    <div class="cap"></div>
+    <div class="neck"></div>
+    <div class="body">
+      <div class="fill"></div>
+      <svg class="face" viewBox="0 0 70 70">
+        <circle cx="24" cy="28" r="3.6" fill="#241F42"/>
+        <circle cx="46" cy="28" r="3.6" fill="#241F42"/>
+        <path d="M21 38 Q35 52 49 38" stroke="#241F42" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </div>
+
+  <h1>Want a cute app<br>like this one?</h1>
+  <p class="pitch">I design and build apps and websites like Intake. Reach out if you've got an idea you'd like to see made real.</p>
+
+  <div class="links">
+    <a class="link-card" href="mailto:renike.dev@gmail.com">
+      <span class="icon email"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3 7l9 6 9-6"/></svg></span>
+      <span class="txt"><span class="label">Email</span><br><span class="handle">renike.dev@gmail.com</span></span>
+    </a>
+    <a class="link-card" href="https://x.com/DevRenike" target="_blank" rel="noopener">
+      <span class="icon x"><svg viewBox="0 0 24 24" fill="white"><path d="M4 4l7.5 8.3L4.3 20H7l5.2-5.9L17 20h3l-7.9-8.8L19.4 4h-2.7l-4.8 5.4L7 4H4z"/></svg></span>
+      <span class="txt"><span class="label">X</span><br><span class="handle">@DevRenike</span></span>
+    </a>
+    <a class="link-card" href="https://tiktok.com/@Renike.dev" target="_blank" rel="noopener">
+      <span class="icon tiktok"><svg viewBox="0 0 24 24" fill="white"><path d="M16.5 3c.4 2.2 1.9 3.7 4 3.9v3c-1.5 0-2.9-.5-4-1.4v6.6a5.6 5.6 0 1 1-5.6-5.6c.3 0 .6 0 .9.1v3.1a2.5 2.5 0 1 0 1.7 2.4V3h3z"/></svg></span>
+      <span class="txt"><span class="label">TikTok</span><br><span class="handle">@Renike.dev</span></span>
+    </a>
+    <a class="link-card" href="https://youtube.com/@DevRenike" target="_blank" rel="noopener">
+      <span class="icon youtube"><svg viewBox="0 0 24 24" fill="white"><rect x="2" y="5" width="20" height="14" rx="4" fill="none"/><path d="M10 9l6 3-6 3z"/></svg></span>
+      <span class="txt"><span class="label">YouTube</span><br><span class="handle">@DevRenike</span></span>
+    </a>
+  </div>
+
+  <div class="badge">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C12 2 5 11 5 15.5C5 19.6 8.1 22 12 22C15.9 22 19 19.6 19 15.5C19 11 12 2 12 2Z"/></svg>
+    Remember to drink water!
+  </div>
+
+</div>
+</body>
+</html>
