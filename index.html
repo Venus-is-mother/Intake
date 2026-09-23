@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Intake — Water Tracker</title>
+<title>Intake: Water Tracker</title>
 <meta name="description" content="A small, friendly daily water intake log, 1–6 litres.">
 <meta name="color-scheme" content="light">
 <link rel="manifest" href="manifest.json">
@@ -572,7 +572,7 @@
 
     if(totalL > SCALE_MAX_L){
       els.overReadout.hidden = false;
-      els.overReadout.textContent = 'Over the ' + SCALE_MAX_L + ' L scale \u2014 nicely done!';
+      els.overReadout.textContent = 'Over the ' + SCALE_MAX_L + 'L scale. Nicely done!';
     } else {
       els.overReadout.hidden = true;
     }
